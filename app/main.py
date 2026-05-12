@@ -3,6 +3,7 @@ from fastapi import FastAPI
 from app.routers.health import router as health_router
 from app.api.passenger import router as passenger_router
 from app.api.driver import router as driver_router
+from app.api.ride import router as ride_router
 
 app = FastAPI(
     title="Taxi Service API",
@@ -13,7 +14,7 @@ app = FastAPI(
 app.include_router(health_router)
 app.include_router(passenger_router)
 app.include_router(driver_router)
-
+app.include_router(ride_router)
 
 @app.get("/")
 async def root() -> dict[str, str]:
