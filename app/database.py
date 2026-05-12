@@ -20,3 +20,5 @@ SessionLocal = sessionmaker(
 
 class Base(DeclarativeBase):
     pass
+
+from app.models import Passenger, Driver, Ride, Payment  # noqa: F401
