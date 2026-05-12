@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 
 from app.routers.health import router as health_router
+from app.api.passenger import router as passenger_router
 
 app = FastAPI(
     title="Taxi Service API",
@@ -9,6 +10,7 @@ app = FastAPI(
 )
 
 app.include_router(health_router)
+app.include_router(passenger_router)
 
 
 @app.get("/")
