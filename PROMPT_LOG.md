@@ -283,3 +283,56 @@ SQLAlchemy 2.0 стиль"
 Время:
 \~30 минут
 
+
+### Промпт 10
+
+Инструмент: ChatGPT
+
+Промпт:
+"Ты — senior Python backend разработчик.
+
+Реализуй полный CRUD REST API для сущности Ride в FastAPI проекте сервиса заказа такси.
+
+Используй:
+- FastAPI
+- SQLAlchemy 2.0 ORM
+- PostgreSQL
+- Pydantic v2
+- dependency injection через get_db
+
+Сущность Ride содержит поля:
+- id
+- passenger_id
+- driver_id
+- pickup_address
+- destination_address
+- status
+- price
+- distance_km
+- created_at
+
+Требования:
+- создать Pydantic схемы RideCreate, RideUpdate, RideResponse;
+- реализовать CRUD слой отдельно от роутеров;
+- реализовать endpoints:
+  - GET /rides
+  - POST /rides
+  - GET /rides/{id}
+  - PUT /rides/{id}
+  - DELETE /rides/{id}
+- использовать response_model;
+- обработать ошибки 404 (Ride not found);
+- использовать type hints;
+- использовать современный стиль SQLAlchemy 2.0;
+- код должен соответствовать FastAPI best practices;
+- архитектура должна быть совместима с Alembic миграциями и Docker PostgreSQL."
+
+Результат:
+Реализован полный Ride CRUD REST API модуль с SQLAlchemy ORM, Pydantic схемами и FastAPI роутерами.
+
+Что исправил вручную:
+Синхронизировал поля схем с ORM моделью Ride и исправил импорты.
+
+Время:
+~35 минут
+
