@@ -49,3 +49,35 @@
 
 Время:
 ~10 минут
+
+
+### Промпт 3
+
+Инструмент: ChatGPT
+
+Промпт:
+"Ты — senior Python backend разработчик.
+
+Сгенерируй database.py для FastAPI проекта сервиса заказа такси.
+
+Используй:
+- SQLAlchemy 2.0
+- PostgreSQL
+- DeclarativeBase
+- sessionmaker
+
+Требования:
+- создать engine;
+- настроить SessionLocal;
+- подготовить Base для ORM моделей;
+- использовать современный стиль SQLAlchemy 2.0;
+- код должен быть пригоден для Alembic миграций."
+
+Результат:
+Получен database.py с SQLAlchemy engine, session factory и базовым DeclarativeBase.
+
+Что исправил вручную:
+Разделил импорты по PEP8.
+
+Время:
+~15 минут
