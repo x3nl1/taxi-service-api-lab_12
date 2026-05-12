@@ -81,3 +81,33 @@
 
 Время:
 ~15 минут
+
+
+### Промпт 4
+
+Инструмент: ChatGPT
+
+Промпт:
+"Ты — senior Python backend разработчик.
+
+Помоги реализовать dependency injection для database session в FastAPI приложении.
+
+Используй:
+- SQLAlchemy Session
+- dependency injection через Depends
+- generator pattern
+
+Требования:
+- корректное закрытие database session;
+- совместимость с FastAPI;
+- type hints;
+- соответствие best practices FastAPI."
+
+Результат:
+Получен get_db dependency для управления жизненным циклом database session.
+
+Что исправил вручную:
+Ничего.
+
+Время:
+~10 минут
