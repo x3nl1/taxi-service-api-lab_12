@@ -17,3 +17,35 @@
 
 Время:
 ~15 минут
+
+
+### Промпт 2
+
+Инструмент: ChatGPT
+
+Промпт:
+"Ты — senior Python backend разработчик.
+
+Помоги настроить конфигурацию FastAPI проекта для сервиса заказа такси.
+
+Используй:
+- pydantic-settings
+- .env файл
+- SQLAlchemy 2.0
+- PostgreSQL
+
+Требования:
+- отдельный config.py;
+- загрузка DATABASE_URL из .env;
+- type hints;
+- структура должна подходить для Docker и Alembic;
+- код должен быть совместим с FastAPI best practices."
+
+Результат:
+Получен класс Settings с загрузкой конфигурации из .env через pydantic-settings.
+
+Что исправил вручную:
+Ничего.
+
+Время:
+~10 минут
