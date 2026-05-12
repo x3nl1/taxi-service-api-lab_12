@@ -111,3 +111,36 @@
 
 Время:
 ~10 минут
+
+
+### Промпт 5
+
+Инструмент: ChatGPT
+
+Промпт:
+"Ты — senior Python backend разработчик.
+
+Создай SQLAlchemy 2.0 ORM модели для сервиса заказа такси.
+
+Сущности:
+- Passenger (id, full_name, phone)
+- Driver (id, full_name, license_number, is_available)
+- Ride (id, passenger_id, driver_id, pickup_address, destination_address, status, price, distance_km, created_at)
+- Payment (id, ride_id, amount, method, status)
+
+Требования:
+- использовать mapped_column и Mapped;
+- настроить relationships между таблицами;
+- добавить foreign keys;
+- учитывать связи 1:N и 1:1;
+- подготовить модели для Alembic миграций;
+- использовать SQLAlchemy 2.0 стиль."
+
+Результат:
+Сгенерированы 4 ORM модели с корректными связями и типизацией.
+
+Что исправил вручную:
+Добавил __init__.py для моделей и исправил импорт для Alembic metadata discovery.
+
+Время:
+~25 минут
